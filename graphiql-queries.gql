@@ -1,0 +1,14 @@
+# queries
+query getMagicLink($emailAddress: String!) {
+  request(emailAddress: $emailAddress)
+}
+
+query verifyToken($token: String!) {
+  verify(token: $token)
+}
+
+# variables
+{
+  "emailAddress": "",
+  "token": ""
+}

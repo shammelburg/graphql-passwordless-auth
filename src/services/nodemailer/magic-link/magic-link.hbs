@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style type="text/css">
+    </style>
+</head>
+
+<body style="margin: 0; padding: 0; background-color: #eee;">
+    <table border="0" cellpadding="0" cellspacing="0" width="100%">
+        <tr>
+            <td style="padding: 40px;">
+
+                <table
+                    style="max-width: 600px; margin: 0 auto; text-align: center; background-color: #fff; border-radius:15px;"
+                    cellspacing="0" cellpadding="0" align="center">
+                    <tr>
+                        <td style="padding: 30px 0 10px;">
+                            <h2>👋</h2>
+                            <h1>Hi, {{firstName}}!</h1>
+                            <p>Here is your one-time use magic link. This link will expire in {{duration}}.</p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px 0;">
+                            To login, please click the blue button.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0 0 30px;">
+                            <a href="{{loginUrl}}" id="{{loginUrl}}" target="_blank"
+                                style="color: #ffffff; text-decoration: none; border-radius: 5px; background-color: #3498db; border-top: 12px solid #3498db; border-bottom: 12px solid #3498db; border-right: 18px solid #3498db; border-left: 18px solid #3498db; display: inline-block;">
+                                Log me in ✔
+                            </a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 0px 40px; word-break: break-all;">
+                            <p>
+                                Link not working?
+                                <br>
+                                Copy and paste the link below into your browser directly.
+                            </p>
+                            <a href="{{loginUrl}}" target="_blank" rel="noopener noreferrer">{{loginUrl}}</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 20px 30px; font-size: 8pt;">
+                            <p>
+                                This email was requested by <strong>{{ip}}</strong>.
+                                <br>
+                                If you did not request this email, please contact
+                                the system admistrator.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+            </td>
+        </tr>
+    </table>
+
+</body>
+
+</html>
